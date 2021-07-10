@@ -136,11 +136,13 @@
     <script>
         var i = 0;
         var txt = "Terima kasih untuk kamu yang senatiasa medengar keluh kesah ku, setia menjalani dan menghadapi setiap masalah yang berlalu lalang.\n\nSelamat Ulang Tahun.\n\nJujur aku tidak ingin mengatakan itu padamu karena aku benci melihatmu menua jika tak bersamaku. Yang terpenting semoga panjang umurmu, semakin dewasa, dan semua yang kamu kejar tercapai. Dan tidak peduli hidup membawa kita, semua momen spesial yang kita bagi akan tetap tinggal selamanya dihati.";
+        var txt2 = "avc";
         var speed = 120;
 
         function Gassngetik() {
             if (i < txt.length) {
                 document.getElementById("tekss").innerHTML += txt.charAt(i);
+                document.getElementById("tekss").innerHTML += txt2.charAt(i);
                 i++;
                 setTimeout(Gassngetik, speed);
             }
