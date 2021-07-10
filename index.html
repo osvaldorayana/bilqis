@@ -135,6 +135,7 @@
     </script>
     <script>
         var i = 0;
+        var j = 0;
         var txt = "123";
         var txt2 = "avc";
         var speed = 120;
@@ -147,9 +148,9 @@
             }
         }
         function Gassngetik() {
-            if (i < txt2.length) {
-                document.getElementById("tekss").innerHTML += txt2.charAt(i);
-                i++;
+            if (j < txt2.length) {
+                document.getElementById("tekss").innerHTML += txt2.charAt(j);
+                j++;
                 setTimeout(Gassngetik, speed);
             }
         }
