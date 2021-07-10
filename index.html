@@ -81,7 +81,7 @@
                     <hr>
 
                     <button type="button" class="tombol" style="width: 100%;" data-toggle="modal" data-target="#Modalmuncul" onclick="Mainkannn(); Gassngetik();">
-                   Klik disini
+                   Touch Me!
                   </button>
                 </div>
             </div>
@@ -98,8 +98,9 @@
           </button>
                     </div>
                     <div class="modal-body">
-                        <p id="tekss">
-                        </p>
+                        <p id="tekss"></p>
+                        <p id="tekss2"></p>
+                        <p id="tekss3"></p>
                         <br><br> ~Osvaldo Rayana
                     </div>
                     <audio id="lagu" src="assets/lagu/lagu.mp3" preload="auto">
@@ -135,14 +136,14 @@
     </script>
     <script>
         var i = 0;
-        var txt = ["123",
-                   "avc",
-                   "test"];
+        var txt = "123";
+        var txt2 = "abc";
         var speed = 120;
 
         function Gassngetik() {
             if (i < txt.length) {
-                document.getElementById("tekss").innerHTML += txt.charAt(i) + "<br/>";
+                document.getElementById("tekss").innerHTML += txt.charAt(i);
+                document.getElementById("tekss2").innerHTML += txt2.charAt(i)
                 i++;
                 setTimeout(Gassngetik, speed);
             }
