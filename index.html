@@ -136,21 +136,15 @@
     <script>
         var i = 0;
         var j = 0;
-        var txt = "123";
-        var txt2 = "avc";
+        var txt = ["123",
+                   "avc",
+                   "test"];
         var speed = 120;
 
         function Gassngetik() {
             if (i < txt.length) {
                 document.getElementById("tekss").innerHTML += txt.charAt(i);
                 i++;
-                setTimeout(Gassngetik, speed);
-            }
-        }
-        function Gassngetik() {
-            if (j < txt2.length) {
-                document.getElementById("tekss").innerHTML += txt2.charAt(j);
-                j++;
                 setTimeout(Gassngetik, speed);
             }
         }
