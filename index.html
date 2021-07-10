@@ -138,12 +138,13 @@
     <script>
         var i = 0;
         var txt = "123aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
-        var txt2 = "abc";
+        var txt2 = "abcaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
         var speed = 120;
 
         function Gassngetik() {
             if (i < txt.length) {
                 document.getElementById("tekss").innerHTML += txt.charAt(i);
+                i++;
                 document.getElementById("tekss2").innerHTML += txt2.charAt(i)
                 i++;
                 setTimeout(Gassngetik, speed);
